@@ -6,7 +6,7 @@ In Week 08, we extend this workflow to implement **Continuous Delivery (CD)**.
 
 The application will first be automatically deployed to a **staging environment**. After deployment, automated tests will verify that the staging application is working correctly. A tested version can then be manually promoted to the **production environment**.
 
-The same Docker images that are tested in staging are deployed to production. The application is **not rebuilt** during production deployment.
+The same Docker images that are tested in staging are deployed to production. The application is **not rebuilt** during production deployment..
 
 ---
 
