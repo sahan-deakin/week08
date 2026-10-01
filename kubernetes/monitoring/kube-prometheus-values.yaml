@@ -1,0 +1,14 @@
+# kube-prometheus-stack values for KoalaTech
+grafana:
+  service:
+    type: LoadBalancer   # public IP for the dashboard
+
+prometheus:
+  prometheusSpec:
+    # pick up ServiceMonitors in any namespace (e.g. staging)
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+    retention: 2d
+
+alertmanager:
+  enabled: false         # not needed for this task
